@@ -29,7 +29,6 @@ struct NewItemView: View {
                     .datePickerStyle(GraphicalDatePickerStyle())
                 
                 //Button
-            
                 TLButton(title: "Save",
                          background: .pink)
                 {
