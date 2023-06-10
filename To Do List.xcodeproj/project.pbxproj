@@ -36,6 +36,7 @@
 		FA15A0182A346BA300E21A71 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15A0172A346BA300E21A71 /* To_Do_ListTests.swift */; };
 		FA15A0222A346BA300E21A71 /* To_Do_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15A0212A346BA300E21A71 /* To_Do_ListUITests.swift */; };
 		FA15A0242A346BA300E21A71 /* To_Do_ListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15A0232A346BA300E21A71 /* To_Do_ListUITestsLaunchTests.swift */; };
+		FA15A03E2A3508FC00E21A71 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15A03D2A3508FC00E21A71 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		FA15A01D2A346BA300E21A71 /* To Do ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To Do ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA15A0212A346BA300E21A71 /* To_Do_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITests.swift; sourceTree = "<group>"; };
 		FA15A0232A346BA300E21A71 /* To_Do_ListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA15A03D2A3508FC00E21A71 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				C46FB84B2A347E6500334929 /* GoogleService-Info.plist */,
 				FA15A0062A346BA300E21A71 /* To_Do_ListApp.swift */,
 				C46FB87C2A34B4CE00334929 /* Extensions.swift */,
+				FA15A03D2A3508FC00E21A71 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			files = (
 				FA15A00E2A346BA300E21A71 /* Preview Assets.xcassets in Resources */,
 				FA15A00B2A346BA300E21A71 /* Assets.xcassets in Resources */,
+				FA15A03E2A3508FC00E21A71 /* Launch Screen.storyboard in Resources */,
 				C46FB84C2A347E6500334929 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +548,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,6 +577,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
