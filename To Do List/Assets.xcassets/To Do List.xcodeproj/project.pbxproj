@@ -14,7 +14,11 @@
 		FA15A0182A346BA300E21A71 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15A0172A346BA300E21A71 /* To_Do_ListTests.swift */; };
 		FA15A0222A346BA300E21A71 /* To_Do_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15A0212A346BA300E21A71 /* To_Do_ListUITests.swift */; };
 		FA15A0242A346BA300E21A71 /* To_Do_ListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15A0232A346BA300E21A71 /* To_Do_ListUITestsLaunchTests.swift */; };
-		FA15A03C2A347B6500E21A71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA15A03B2A347B6500E21A71 /* GoogleService-Info.plist */; };
+		FA15A0322A34718300E21A71 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA15A0312A34718300E21A71 /* FirebaseAuth */; };
+		FA15A0342A34718300E21A71 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA15A0332A34718300E21A71 /* FirebaseDatabase */; };
+		FA15A0362A34718300E21A71 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA15A0352A34718300E21A71 /* FirebaseDatabaseSwift */; };
+		FA15A0382A34718300E21A71 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA15A0372A34718300E21A71 /* FirebaseFirestore */; };
+		FA15A03A2A34718300E21A71 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA15A0392A34718300E21A71 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,6 @@
 		FA15A01D2A346BA300E21A71 /* To Do ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To Do ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA15A0212A346BA300E21A71 /* To_Do_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITests.swift; sourceTree = "<group>"; };
 		FA15A0232A346BA300E21A71 /* To_Do_ListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FA15A03B2A347B6500E21A71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA15A03A2A34718300E21A71 /* FirebaseFirestoreSwift in Frameworks */,
+				FA15A0362A34718300E21A71 /* FirebaseDatabaseSwift in Frameworks */,
+				FA15A0382A34718300E21A71 /* FirebaseFirestore in Frameworks */,
+				FA15A0342A34718300E21A71 /* FirebaseDatabase in Frameworks */,
+				FA15A0322A34718300E21A71 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +104,6 @@
 		FA15A0052A346BA300E21A71 /* To Do List */ = {
 			isa = PBXGroup;
 			children = (
-				FA15A03B2A347B6500E21A71 /* GoogleService-Info.plist */,
 				FA15A0062A346BA300E21A71 /* To_Do_ListApp.swift */,
 				FA15A0082A346BA300E21A71 /* ContentView.swift */,
 				FA15A00A2A346BA300E21A71 /* Assets.xcassets */,
@@ -146,6 +153,13 @@
 			dependencies = (
 			);
 			name = "To Do List";
+			packageProductDependencies = (
+				FA15A0312A34718300E21A71 /* FirebaseAuth */,
+				FA15A0332A34718300E21A71 /* FirebaseDatabase */,
+				FA15A0352A34718300E21A71 /* FirebaseDatabaseSwift */,
+				FA15A0372A34718300E21A71 /* FirebaseFirestore */,
+				FA15A0392A34718300E21A71 /* FirebaseFirestoreSwift */,
+			);
 			productName = "To Do List";
 			productReference = FA15A0032A346BA300E21A71 /* To Do List.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +232,9 @@
 				Base,
 			);
 			mainGroup = FA159FFA2A346BA300E21A71;
+			packageReferences = (
+				FA15A0302A34718300E21A71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FA15A0042A346BA300E21A71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +253,6 @@
 			files = (
 				FA15A00E2A346BA300E21A71 /* Preview Assets.xcassets in Resources */,
 				FA15A00B2A346BA300E21A71 /* Assets.xcassets in Resources */,
-				FA15A03C2A347B6500E21A71 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,11 +439,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"To Do List/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,11 +467,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"To Do List/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +597,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA15A0302A34718300E21A71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA15A0312A34718300E21A71 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA15A0302A34718300E21A71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FA15A0332A34718300E21A71 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA15A0302A34718300E21A71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FA15A0352A34718300E21A71 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA15A0302A34718300E21A71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		FA15A0372A34718300E21A71 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA15A0302A34718300E21A71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FA15A0392A34718300E21A71 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA15A0302A34718300E21A71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA159FFB2A346BA300E21A71 /* Project object */;
 }
