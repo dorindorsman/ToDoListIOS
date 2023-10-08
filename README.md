@@ -2,7 +2,7 @@
 
 # ToDoListIOS!
 
- Stay organized and manage your day-to-day with Microsoft To Do. Make shopping lists or task lists,
+ Stay organized and manage your day-to-day with To Do. Make shopping lists or task lists,
  take notes, record collections, set reminders and more to improve your productivity and focus on what matters.
  To Do App is the task management app that makes it easy to stay organized and manage your life.
  ##
